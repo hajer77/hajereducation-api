@@ -102,7 +102,7 @@ const hajereducationCategories=[
   
   })
 
-  app.get('/hajereducation/:hajereducationCategoryId', async(req,res)=>{
+  app.get('/hajereducation/:hajereducationCategoryId', (req,res)=>{
     const hajereducationCategoryId=req.params.hajereducationCategoryId;
     const hajereducationCategory = hajereducationCategories.filter(hajereducationCategory=>hajereducationCategory.category == hajereducationCategoryId);
     const hajereducationCatAddress = hajereducationCategories.filter(hajereducationCategory=>hajereducationCategory.category == hajereducationCategoryId)[0].address;
