@@ -93,7 +93,15 @@ const hajereducationCategories=[
 
  
 
+ 
 
+   app.get('/',(req,res)=>{
+
+    res.json('My website hajereducation.tn API');
+      
+        
+    
+    })
   app.get('/hajereducation',(req,res)=>{
 
   res.json(articles);
